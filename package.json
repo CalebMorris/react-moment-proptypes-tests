@@ -1,0 +1,19 @@
+{
+  "name": "react-moment-proptypes-tests",
+  "version": "1.0.0",
+  "description": "Test suite for react-moment-proptypes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-moment-proptypes",
+    "tests",
+    "browser"
+  ],
+  "author": "Caleb Morris",
+  "license": "MIT",
+  "dependencies": {
+    "react-moment-proptypes": "^1.5.0"
+  }
+}
