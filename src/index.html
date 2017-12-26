@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
   </head>
   <body>
+    <div id="render-root" style="display:none;"></div>
     <div id="mocha"></div>
     <script src="../node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
@@ -14,6 +15,8 @@
     <!-- load code you want to test here -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/prop-types/prop-types.js"></script>
+    <script src="./prop-failed-error.js"></script>
     <script src="./react-classes.jsx"></script>
 
     <!-- load your test files here -->
