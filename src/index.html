@@ -16,12 +16,19 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/prop-types/prop-types.js"></script>
+
+    <!-- Proptypes Import -->
+    <script src="../node_modules/react-moment-proptypes-browser-build/lib/react-moment-proptypes.js"></script>
+
+    <!-- Test Helpers -->
     <script src="./prop-failed-error.js"></script>
     <script src="./react-classes.jsx"></script>
 
     <!-- load your test files here -->
-    <script src="./index.js"></script>
-    <script src="./index0.js"></script>
+    <script src="../test/has-loaded-tests.js"></script>
+    <script src="../test/moment-obj.js"></script>
+    <script src="../test/moment-str.js"></script>
+    <script src="../test/moment-duration-obj.js"></script>
 
     <script>
       mocha.run();
