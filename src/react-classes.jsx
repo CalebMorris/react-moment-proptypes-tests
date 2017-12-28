@@ -1,23 +1,87 @@
-class Greetings extends React.Component
-{
+class MomentObj extends React.Component {
     render() {
-        return React.createElement('h1', null, 'Greetings, ' + this.props.name + '!');
+        return null;
     }
 }
-
-Greetings.propTypes = {
-  name: PropTypes.string
+MomentObj.propTypes = {
+  dateThing : ReactMomentProptypes.momentObj,
+  dateThingWithPredicate : ReactMomentProptypes.momentObj.withPredicate(
+    function isUTC(momentObject) {
+      return momentObject.isUTC();
+    }
+  ),
 };
-// 
-// window.onload = function() {
-//   console.log('sinon: ' + !!sinon)
-//     ReactDOM.render(
-//         React.createElement(Greetings, { name : 123 }),
-//         document.getElementById('render-root')
-//     );
-//
-//     ReactDOM.render(
-//         React.createElement(Greetings, { name : '2' }),
-//         document.getElementById('render-root')
-//     );
-// };
+
+class MomentObjRequiredBase extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentObjRequiredBase.propTypes = { requiredDateThing : ReactMomentProptypes.momentObj.isRequired };
+
+class MomentObjRequiredPredicate extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentObjRequiredPredicate.propTypes = {
+  requiredDateThingWithPredicate : ReactMomentProptypes.momentObj.withPredicate(
+    function isUTC(momentObject) {
+      return momentObject.isUTC();
+    }
+  ).isRequired,
+};
+
+class MomentStr extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentStr.propTypes = {
+  stringThing: ReactMomentProptypes.momentString,
+  stringThingWithPredicate: ReactMomentProptypes.momentString.withPredicate(
+    function isFoo(momentString) {
+      return true;
+    }
+  ),
+};
+
+class MomentStrRequiredBase extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentStrRequiredBase.propTypes = {
+  requiredStringThing: ReactMomentProptypes.momentString.isRequired,
+};
+
+class MomentStrRequiredPred extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentStrRequiredPred.propTypes = {
+  requiredStringThingWithPredicate: ReactMomentProptypes.momentString.withPredicate(
+    function isFoo(momentString) {
+      return true;
+    }
+  ),
+};
+
+class MomentDurationObj extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentDurationObj.propTypes = {
+  durationObjThing: ReactMomentProptypes.momentDurationObj
+};
+
+class MomentDurationObjRequiredBase extends React.Component {
+    render() {
+        return null;
+    }
+}
+MomentDurationObjRequiredBase.propTypes = {
+  requiredDurationObjThing: ReactMomentProptypes.momentDurationObj.isRequired
+};
