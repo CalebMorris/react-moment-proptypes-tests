@@ -8,7 +8,9 @@
     "test-all": "npm run test-1.6 && npm run test-1.7 && npm run test-latest",
     "test-1.6": "rm -Rf ./node_modules/moment/ && npm i moment@1.6.0 && npm test",
     "test-1.7": "rm -Rf ./node_modules/moment/ && npm i moment@1.7.0 && npm test",
-    "test-latest": "rm -Rf ./node_modules/moment/ && npm i moment@latest && npm test"
+    "test-latest": "rm -Rf ./node_modules/moment/ && npm i moment@latest && npm test",
+    "cpy-test-framework": "cp -R ./node_modules/{mocha,chai,sinon} ./lib/",
+    "cpy-test-src": "cp ./node_modules/react-moment-proptypes-browser-build/lib/react-moment-proptypes.js ./lib/react-moment-proptypes.js"
   },
   "keywords": [
     "react-moment-proptypes",
