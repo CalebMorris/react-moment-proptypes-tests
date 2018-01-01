@@ -7,7 +7,7 @@ MomentObj.propTypes = {
   dateThing : ReactMomentProptypes.momentObj,
   dateThingWithPredicate : ReactMomentProptypes.momentObj.withPredicate(
     function isUTC(momentObject) {
-      return momentObject.isUTC();
+      return momentObject.year() > 1900;
     }
   ),
 };
@@ -27,7 +27,7 @@ class MomentObjRequiredPredicate extends React.Component {
 MomentObjRequiredPredicate.propTypes = {
   requiredDateThingWithPredicate : ReactMomentProptypes.momentObj.withPredicate(
     function isUTC(momentObject) {
-      return momentObject.isUTC();
+      return momentObject.year() > 1900;
     }
   ).isRequired,
 };

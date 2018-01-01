@@ -100,7 +100,7 @@ describe('ReactMomentProptypes.momentObj', function() {
 
       it('should warn with valid moment that fails the predicate', function() {
         wrapPropFailureCheck(true, () => {
-          var testProp = moment();
+          var testProp = moment().year(1800);
           ReactDOM.render(
               React.createElement(MomentObj, { dateThingWithPredicate : testProp }),
               document.getElementById(renderRootId)
@@ -155,7 +155,7 @@ describe('ReactMomentProptypes.momentObj', function() {
 
       it('should warn with valid moment that fails the predicate', function() {
         wrapPropFailureCheck(true, () => {
-          var testProp = moment();
+          var testProp = moment().year(1800);
           ReactDOM.render(
               React.createElement(
                 MomentObjRequiredPredicate, { requiredDateThingWithPredicate : testProp }),
