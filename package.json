@@ -4,7 +4,11 @@
   "description": "Test suite for react-moment-proptypes",
   "main": "index.js",
   "scripts": {
-    "test": "node test/puppeter-test-run.js"
+    "test": "node test/puppeter-test-run.js",
+    "test-all": "npm run test-1.6 && npm run test-1.7 && npm run test-latest",
+    "test-1.6": "rm -Rf ./node_modules/moment/ && npm i moment@1.6.0 && npm test",
+    "test-1.7": "rm -Rf ./node_modules/moment/ && npm i moment@1.7.0 && npm test",
+    "test-latest": "rm -Rf ./node_modules/moment/ && npm i moment@latest && npm test",
   },
   "keywords": [
     "react-moment-proptypes",
