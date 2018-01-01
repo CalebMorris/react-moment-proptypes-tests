@@ -3,7 +3,7 @@ const path = require('path');
 const promisify = require('util').promisify;
 const chalk = require('chalk');
 
-var testPath = 'file://' + path.join(__dirname, '../tests-latest.html');
+var testPath = 'file://' + path.join(__dirname, '../puppet.html');
 console.log(`loading file at location @"${chalk.yellow(testPath)}"`);
 
 async function execute(filePath) {
