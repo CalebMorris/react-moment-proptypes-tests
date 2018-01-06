@@ -32,6 +32,17 @@ MomentObjRequiredPredicate.propTypes = {
   ).isRequired,
 };
 
+class MomentObjPredicateThrows extends React.Component {
+    render() {
+        return null;
+    }
+}
+class MomentObjRequiredPredicateThrow extends React.Component {
+    render() {
+        return null;
+    }
+}
+
 class MomentStr extends React.Component {
     render() {
         return null;
