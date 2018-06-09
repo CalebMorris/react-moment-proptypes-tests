@@ -23,8 +23,8 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "moment": "^2.20.1",
-    "react-moment-proptypes": "^1.5.0",
-    "react-moment-proptypes-browser-build": "^0.1.1",
+    "react-moment-proptypes": "^1.6.0",
+    "react-moment-proptypes-browser-build": "^0.6.0",
     "sinon": "^4.1.2"
   },
   "devDependencies": {
